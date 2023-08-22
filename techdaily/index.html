@@ -87,7 +87,7 @@
                 </div>
                 <div class="right">
                     <div class="button-slide">
-                        <button>
+                        <button class="prev-button">
                             <svg width="24" height="44" viewBox="0 0 24 44" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22 2L2 22L22 42" fill="#9F9A9A" />
@@ -101,14 +101,14 @@
                             <img src="css/img/slide one.png" alt="Slide 1">
                         </div>
                         <div class="slide">
-                            <img src="image2.jpg" alt="Slide 2">
+                            <img src="css/img/Facebook.png" alt="Slide 2">
                         </div>
                         <div class="slide">
-                            <img src="image3.jpg" alt="Slide 3">
+                            <img src="css/img/Twitter.png" alt="Slide 3">
                         </div>
                     </div>
                     <div class="button-slide">
-                        <button>
+                        <button class="next-button">
                             <svg width="24" height="44" viewBox="0 0 24 44" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2.08289 42.0413L21.9999 21.9586L1.9173 2.0416" fill="#9F9A9A" />
@@ -123,7 +123,20 @@
         </section>
         <section class="search">
             <div class="search-container container">
-                <form action="/"></form>
+                <form action="/" class="search-form">
+                    <div class="form-control">
+                        <label for="event">Search Event</label><br>
+                        <input type="text" name="event" placeholder="Search Event">
+                    </div>
+                    <div class="form-control">
+                        <label for="place">Place</label><br>
+                        <input type="text" name="place" placeholder="Search Place">
+                    </div>
+                    <div class="form-control">
+                        <label for="time">Time</label><br>
+                        <input type="date" name="time" placeholder="Enter Dtae">
+                    </div>
+                </form>
             </div>
         </section>
     </main>

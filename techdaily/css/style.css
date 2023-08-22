@@ -12,6 +12,7 @@ button {
   cursor: pointer !important;
   outline: none;
 }
+
 html {
   scroll-behavior: smooth;
   margin: 0;
@@ -156,35 +157,41 @@ nav .links a:hover {
   flex-wrap: wrap;
 }
 
-.banner-container .left, .banner-container .right {
+.banner-container .left,
+.banner-container .right {
   width: 100%;
   max-width: 480px;
   min-width: 280px;
 }
-.banner-container .left{
+
+.banner-container .left {
   padding: 40px 0px 0px;
 }
-.banner-container .left p{
+
+.banner-container .left p {
   font-size: 18px;
   font-weight: 400;
   color: var(--color);
   line-height: 23px;
   margin: 0px 0px 10px;
 }
-.banner-container .left h1{
+
+.banner-container .left h1 {
   font-size: 40px;
   font-weight: 700;
   color: var(--color);
   line-height: 48px;
   margin: 10px 0px 10px;
 }
-.banner-container .left .btns{
+
+.banner-container .left .btns {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 10px 0px 0px;
 }
-.banner-container .left .btns button{
+
+.banner-container .left .btns button {
   height: 60px;
   width: 182px;
   border-radius: 30px;
@@ -193,17 +200,20 @@ nav .links a:hover {
   font-weight: 600;
   line-height: 23px;
 }
-.banner-container .left .btns button:nth-child(1){
+
+.banner-container .left .btns button:nth-child(1) {
   background-color: var(--active-color);
   color: var(--white);
   border: 0px;
 }
-.banner-container .left .btns button:nth-child(2){
+
+.banner-container .left .btns button:nth-child(2) {
   background-color: var(--white);
   color: var(--color);
   border: 1px solid var(--color);
 }
-.banner-container .right{
+
+.banner-container .right {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -211,13 +221,16 @@ nav .links a:hover {
   max-width: 600px;
   min-width: 280px;
 }
-.button-slide{
+
+.button-slide {
   padding: 10px;
 }
-.button-slide button{
+
+.button-slide button {
   background-color: var(--white);
   border: 0px;
 }
+
 .banner .slider {
   display: flex;
   overflow: hidden;
@@ -247,4 +260,51 @@ nav .links a:hover {
   cursor: pointer;
   padding: 0;
   margin: 0 10px;
+}
+
+section.search {
+  margin: 40px 0px;
+}
+
+.search-container {
+  border-radius: 20px;
+  padding: 40px 20px;
+  width: 100%;
+  background-color: var(--back-secondary-color);
+}
+
+form.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control {
+  width: 100%;
+  min-width: 280px;
+  max-width: 340px;
+}
+
+form label {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 20px;
+}
+
+form input {
+  height: 60px;
+  width: 100%;
+  background-color: var(--back-secondary-color);
+  border-bottom: 2px solid var(--grey) !important;
+  border: 0px;
+  padding: 8px 0px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 24px;
+}
+
+form input::placeholder {
+  color: var(--grey);
 }

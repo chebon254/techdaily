@@ -27,42 +27,5 @@ window.addEventListener("scroll", reveal);
 
 
 /* == BANNER SLIDER == */
-const slider = document.querySelector('.slider');
-const slides = document.querySelectorAll('.slide');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
 
-let currentIndex = 0;
-let intervalId = null;
-
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateSlider();
-}
-
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateSlider();
-}
-
-function updateSlider() {
-    const offset = -currentIndex * 100;
-    slider.style.transform = `translateX(${offset}%)`;
-}
-
-nextButton.addEventListener('click', nextSlide);
-prevButton.addEventListener('click', prevSlide);
-
-function startAutoSlide() {
-    intervalId = setInterval(nextSlide, 5000); // Auto-advance every 5 seconds
-}
-
-function stopAutoSlide() {
-    clearInterval(intervalId);
-}
-
-startAutoSlide();
-
-slider.addEventListener('mouseenter', stopAutoSlide);
-slider.addEventListener('mouseleave', startAutoSlide);
 /* == BANNER SLIDER == */
