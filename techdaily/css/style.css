@@ -95,6 +95,10 @@ header {
   background-color: var(--grey);
 }
 
+header.payment {
+  background-color: var(--white) !important;
+}
+
 nav .logo img {
   width: 120px;
 }
@@ -285,14 +289,14 @@ form.search-form {
   max-width: 340px;
 }
 
-form label {
+form.search-form label {
   font-size: 16px;
   font-weight: 400;
   color: var(--white);
   line-height: 20px;
 }
 
-form input {
+form.search-form input {
   height: 60px;
   width: 100%;
   background-color: var(--back-secondary-color);
@@ -307,7 +311,7 @@ form input {
   line-height: normal;
 }
 
-form input::placeholder {
+form.search-form input::placeholder {
   color: var(--grey);
 }
 
@@ -782,3 +786,16 @@ footer {
 }
 
 /* == || FOOTER == */
+
+/* == TICKET PAYMENT PAGE == */
+section.payment{
+  margin: 20px 0px;
+}
+.payment-container{
+  border-top: 6px solid #00E741;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* == || TICKET PAYMENT PAGE == */
