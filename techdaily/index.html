@@ -41,8 +41,7 @@
     <!-- == Fonts == -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- == Icons == -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -137,6 +136,119 @@
                         <input type="date" name="time" placeholder="Enter Dtae">
                     </div>
                 </form>
+            </div>
+        </section>
+        <section class="events">
+            <div class="events-container container">
+                <div class="events-head">
+                    <span>Upcoming Events</span>
+                    <div class="drop-search">
+                        <div class="shared-dropdown">
+                            <input type="text" id="customInput" placeholder="WeekDays" class="dropbtn" readonly><i class="fa-solid fa-angle-down"></i></input>
+                            <div class="dropdown-content">
+                              <a href="#home" onclick="selectItem('Home')">Home</a>
+                              <a href="#about" onclick="selectItem('About')">About</a>
+                              <a href="#contact" onclick="selectItem('Contact')">Contact</a>
+                            </div>
+                        </div>
+                        <div class="shared-dropdown">
+                            <input type="text" id="customInput" placeholder="Event Type" class="dropbtn" readonly><i class="fa-solid fa-angle-down"></i></input>
+                            <div class="dropdown-content">
+                              <a href="#home" onclick="selectItem('Home')">Home</a>
+                              <a href="#about" onclick="selectItem('About')">About</a>
+                              <a href="#contact" onclick="selectItem('Contact')">Contact</a>
+                        </div>
+                        </div>
+                        <div class="shared-dropdown">
+                            <input type="text" id="customInput" placeholder="Any Category" class="dropbtn" readonly><i class="fa-solid fa-angle-down"></i></input>
+                            <div class="dropdown-content">
+                              <a href="#home" onclick="selectItem('Home')">Home</a>
+                              <a href="#about" onclick="selectItem('About')">About</a>
+                              <a href="#contact" onclick="selectItem('Contact')">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="events-cards">
+                    <div class="event-card">
+                        <img src="css/img/event one.png" alt="TechDailyAfrica">
+                        <div class="event-info">
+                            <div class="left">
+                                <span>APR</span>
+                                <span>14</span>
+                            </div>
+                            <div class="right">
+                                <h4>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h4>
+                                <p>We’ll get you directly seated and inside for you to enjoy the show.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="css/img/event two.png" alt="TechDailyAfrica">
+                        <div class="event-info">
+                            <div class="left">
+                                <span>AUG</span>
+                                <span>20</span>
+                            </div>
+                            <div class="right">
+                                <h4>JYJ 2011 JYJ Worldwide Concert Barcelona</h4>
+                                <p>Directly seated and inside for you to enjoy the show.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="css/img/event three.png" alt="TechDailyAfrica">
+                        <div class="event-info">
+                            <div class="left">
+                                <span>SEP</span>
+                                <span>18</span>
+                            </div>
+                            <div class="right">
+                                <h4>2011 Super Junior SM Town Live '10 World Tour New York City</h4>
+                                <p>Directly seated and inside for you to enjoy the show.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="css/img/event four.png" alt="TechDailyAfrica">
+                        <div class="event-info">
+                            <div class="left">
+                                <span>APR</span>
+                                <span>14</span>
+                            </div>
+                            <div class="right">
+                                <h4>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h4>
+                                <p>Wonder Girls 2010 Wonder Girls World Tour San Francisco</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="css/img/event five.png" alt="TechDailyAfrica">
+                        <div class="event-info">
+                            <div class="left">
+                                <span>AUG</span>
+                                <span>20</span>
+                            </div>
+                            <div class="right">
+                                <h4>JYJ 2011 JYJ Worldwide Concert Barcelona</h4>
+                                <p>Directly seated and inside for you to enjoy the show.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="css/img/event six.png" alt="TechDailyAfrica">
+                        <div class="event-info">
+                            <div class="left">
+                                <span>SEP</span>
+                                <span>18</span>
+                            </div>
+                            <div class="right">
+                                <h4>2011 Super Junior SM Town Live '10 World Tour New York City</h4>
+                                <p>Directly seated and inside for you to enjoy the show.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

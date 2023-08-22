@@ -308,3 +308,152 @@ form input {
 form input::placeholder {
   color: var(--grey);
 }
+
+
+/* == EVENTS == */
+.events-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.events-head span {
+  color: #242565;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.shared-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.shared-dropdown .dropbtn {
+  background-color: #F2F4FF;
+  color: white;
+  padding: 16px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  height: 46px;
+  width: 168px;
+  margin: 0px 10px 0px;
+  border-radius: 23px;
+}
+
+.shared-dropdown .dropbtn::placeholder {
+  color: #1D275F;
+}
+
+.shared-dropdown .dropbtn:hover::placeholder,
+.shared-dropdown .dropbtn:focus::placeholder {
+  color: var(--white);
+}
+
+.shared-dropdown .dropbtn:hover,
+.shared-dropdown .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.shared-dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 168px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.shared-dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.shared-dropdown .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.shared-dropdown .show {
+  display: block;
+}
+
+.events-cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px 0px
+}
+
+.event-card {
+  height: ;
+  width: 100%;
+  max-width: 340px;
+  min-width: 280px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  overflow: hidden;
+}
+
+.event-card img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.event-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 25px 18px;
+}
+
+.event-info .left span:nth-child(1) {
+  color: #00E741;
+  text-align: center;
+  font-family: DM Sans !important;
+  font-size: 11.372px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.event-info .left span:nth-child(2) {
+  color: #000;
+  font-family: DM Sans;
+  font-size: 28.429px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.event-info .right {
+  padding: 0px 0px 0px 10px;
+}
+
+.event-info .right h4 {
+  color: #000;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.event-info .right p {
+  color: #6A6A6A;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 21px */
+  margin: 9px 0px 0px;
+}
+
+/* == EVENTS == */

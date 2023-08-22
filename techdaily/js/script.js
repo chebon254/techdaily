@@ -29,3 +29,29 @@ window.addEventListener("scroll", reveal);
 /* == BANNER SLIDER == */
 
 /* == BANNER SLIDER == */
+
+/* == EVENTS DROPDOWN == */
+var customInput = document.getElementById("customInput");
+
+function toggleDropdown() {
+  var dropdownContent = customInput.nextElementSibling;
+  dropdownContent.classList.toggle("show");
+}
+
+function selectItem(item) {
+  customInput.value = item;
+  var dropdownContent = customInput.nextElementSibling;
+  dropdownContent.classList.remove("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.querySelectorAll(".dropdown-content");
+    dropdowns.forEach(function(dropdown) {
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      }
+    });
+  }
+}
+/* == EVENTS DROPDOWN == */
