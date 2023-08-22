@@ -1001,4 +1001,15 @@ button {
 .payment-container .right img{
   width: 100%;
 }
+.ticket-fm-ctrl.total.pay{
+  padding: 20px 0px;
+  border-bottom: 1px solid #C4C4C4;
+}
+.ticket-fm-ctrl.pay button{
+  margin: 40px 0px 0px;
+}
+.ticket-fm-ctrl.total.pay span.green{
+  color: #00E741;
+  cursor: pointer;
+}
 /* == || TICKET PAYMENT PAGE == */
