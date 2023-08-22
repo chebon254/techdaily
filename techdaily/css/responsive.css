@@ -1,22 +1,17 @@
 /* == RESPONSIVE == */
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 320px) {
-  
-}
-
-@media only screen and (max-width: 510px) {
-  
-}
-
 @media only screen and (max-width: 994px) {
-
+    .events-head{
+      justify-content: space-evenly;
+    }
+  }
   
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .events-head{
+      justify-content: space-between;
+    }
+  }
   
-}
-
-/* == || RESPONSIVE == */
+  /* == || RESPONSIVE == */
+  

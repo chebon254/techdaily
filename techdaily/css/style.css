@@ -299,10 +299,12 @@ form input {
   border-bottom: 2px solid var(--grey) !important;
   border: 0px;
   padding: 8px 0px;
+  color: #FFF;
+  font-family: DM Sans !important;
   font-size: 22px;
-  font-weight: 600;
-  color: var(--white);
-  line-height: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 form input::placeholder {
