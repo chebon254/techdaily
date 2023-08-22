@@ -481,10 +481,11 @@ form input::placeholder {
 /* == EVENTS == */
 
 /* == OWN EVENTS == */
-.own-event{
+.own-event {
   background: #EEE1FF;
   margin: 100px 0px 40px;
 }
+
 .own-event-container {
   display: flex;
   align-items: center;
@@ -507,6 +508,7 @@ form input::placeholder {
   max-width: 570px;
   min-width: 280px;
 }
+
 .own-event-container .right {
   width: 100%;
   max-width: 570px;
@@ -533,6 +535,7 @@ form input::placeholder {
   margin: 20px 0px;
   max-width: 382px;
 }
+
 .own-event-container .right button {
   height: 60px;
   width: 182px;
@@ -546,4 +549,46 @@ form input::placeholder {
   border: 1px solid var(--active-color);
   margin: auto !important;
 }
+
 /* == OWN EVENTS == */
+
+/* == BRANDS == */
+.brands {
+  margin: 40px 0px;
+}
+
+.brands-head h2 {
+  color: #242565;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.brands-head p {
+  color: #6A6A6A;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 613px;
+  width: 100%;
+  margin: 20px auto;
+}
+.brands-cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px 10px;
+}
+.brand{
+  width: 100%;
+  max-width: 280px;
+  min-width: 240px;
+}
+/* == BRANDS == */
