@@ -693,18 +693,70 @@ footer {
 }
 
 .footer-column {
-  width: 290px;
+  width: 280px;
   padding: 0px 0px 0px 6px;
   margin: 10px 0px;
 }
-
-.footer-logo-image {
-  margin-bottom: 28px;
-  display: block;
+.footer-column.st{
+  width: 300px;
+}
+.footer-column.st a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
+.footer-column.st a p.a {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer-column.st p {
+  color: #F3F3F3;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 22.4px */
+}
+
+.social-icons.ft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.social-icons.ft a {
+  padding: 4px;
+  margin: 0px 4px;
+}
+
+.footer-column h3 {
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.footer-column.nd{
+  width: 240px;
+}
 .footer-column ul li {
   padding: 4px 0px;
+  color: #F3F3F3;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  /* 28px */
 }
 
 .footer-column a {
@@ -715,37 +767,52 @@ footer {
   margin: 10px 0px;
 }
 
+.footer-column.last{
+  width: 300px;
+}
 .footer-column form {
-  height: fit-content;
+  height: 60px;
+  width: 100%;
+  max-width: 364px;
+  min-width: 280px;
+  padding: 8px;
+  background-color: var(--white);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-column form input {
-  height: 65px;
-  width: 100%;
-  background-color: var(--back-color);
-  border: 1px solid #636363;
-  border-radius: 20px;
-  outline: none;
-  padding: 0px 30px;
+  height: 100%;
+  background-color: var(--white);
+  color: #000000;
+  font-family: DM Sans !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0px 10px;
+}
+
+.footer-column form input::placeholder {
+  color: #959595;
 }
 
 .footer-column form button {
-  height: 65px;
-  width: 40%;
-  background-color: var(--orange);
-  border: 0px;
-  color: var(--black);
-  border-radius: 20px;
-  outline: none;
-  margin: 10px 0px;
-  font-size: 16px;
+  height: 46px;
+  width: 180px;
+  background-color: #00E741;
+  padding: 0px 10px;
+  color: #FFF;
+  font-family: DM Sans !important;
+  font-size: 11px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-
-.footer-column form button svg {
-  margin-left: 4px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.79px;
+  border: 0px;
+  border-radius: 23px;
 }
 
 .copyright {
@@ -755,12 +822,13 @@ footer {
 }
 
 .copyright p {
-  color: var(--white);
-  text-align: center;
-  font-size: 16px;
+  color: #FEFEFE;
+  font-family: Inter;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 160%;
+  /* 22.4px */
 }
 
 /* == || FOOTER == */
