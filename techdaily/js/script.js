@@ -31,17 +31,9 @@ window.addEventListener("scroll", reveal);
 /* == BANNER SLIDER == */
 
 /* == EVENTS DROPDOWN == */
-var customInput = document.getElementById("customInput");
-
-function toggleDropdown() {
-  var dropdownContent = customInput.nextElementSibling;
+function toggleDropdown(id) {
+  var dropdownContent = document.getElementById(id);
   dropdownContent.classList.toggle("show");
-}
-
-function selectItem(item) {
-  customInput.value = item;
-  var dropdownContent = customInput.nextElementSibling;
-  dropdownContent.classList.remove("show");
 }
 
 window.onclick = function(event) {
