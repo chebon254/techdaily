@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "techdaily",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

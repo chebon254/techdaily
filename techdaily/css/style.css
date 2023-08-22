@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* == Primary theme colors == */
+:root {
+  --back-color: #ffffff;
+  --color: #222222;
+  --orange: #f7941d;
+  --scroll-back: #222222;
+  --scroll-thumb: #f7941d;
+
+  --white: #ffffff;
+  --black: #222222;
+  --stroked: #222222;
+}
+
+/* == Primary theme colors == */
+
+/* == SCROLL BAR == */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--scroll-back);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb);
+}
+
+/* Animation CSS */
+@keyframes bottomReveal {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.reveal-fixed {
+  transition: 2s all ease;
+  animation: bottomReveal 2000ms forwards;
+}
+
+.reveal-fixed-delay {
+  transition: 2s all ease;
+  animation: bottomReveal 1200ms forwards;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.showreveal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* == || SCROLL BAR == */
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
