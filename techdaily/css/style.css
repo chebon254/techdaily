@@ -1031,9 +1031,60 @@ section.success {
   border-top: 6px solid #00E741;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   background-color: #FAF9F9;
+  padding: 20px 15px;
 }
 
+.success-container .left,
+.success-container .right {
+  width: 100%;
+  max-width: 500px;
+  min-width: 280px;
+  margin-right: 40px;
+}
+
+.success-container .left h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 20px 0px;
+}
+
+.success-container .left span.day {
+  width: 180px;
+  display: block;
+  color: #00E741;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 20px 0px;
+}
+
+.address-info {
+  padding: 20px 0px 40px;
+}
+
+.address-info p {
+  color: #000;
+  font-family: Inter;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.success-container .right p{
+  color: #000;
+font-family: Inter;
+font-size: 27px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 /* == SUCCESS == */
