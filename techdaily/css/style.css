@@ -977,20 +977,24 @@ button {
   line-height: normal;
   background-color: #ffffff !important;
 }
-.ticket-phone-input{
+
+.ticket-phone-input {
   height: fit-content;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   border-bottom: 1px solid #C4C4C4 !important;
 }
-.ticket-phone-input label{
+
+.ticket-phone-input label {
   width: 160px;
 }
-.ticket-phone-input input{
-  width: 50% !important ;
+
+.ticket-phone-input input {
+  width: 50% !important;
   border-bottom: 0px solid #ffffff !important;
 }
+
 .payment-container .right {
   padding: 20px 0px;
   width: 100%;
@@ -998,18 +1002,38 @@ button {
   min-width: 280px;
 }
 
-.payment-container .right img{
+.payment-container .right img {
   width: 100%;
 }
-.ticket-fm-ctrl.total.pay{
+
+.ticket-fm-ctrl.total.pay {
   padding: 20px 0px;
   border-bottom: 1px solid #C4C4C4;
 }
-.ticket-fm-ctrl.pay button{
+
+.ticket-fm-ctrl.pay button {
   margin: 40px 0px 0px;
 }
-.ticket-fm-ctrl.total.pay span.green{
+
+.ticket-fm-ctrl.total.pay span.green {
   color: #00E741;
   cursor: pointer;
 }
+
 /* == || TICKET PAYMENT PAGE == */
+
+/* == SUCCESS == */
+section.success {
+  margin: 20px 0px;
+}
+
+.success-container {
+  border-top: 6px solid #00E741;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #FAF9F9;
+}
+
+/* == SUCCESS == */
