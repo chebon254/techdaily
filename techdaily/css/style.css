@@ -875,7 +875,7 @@ form.ticket-payment .ticket-fm-ctrl input {
   font-weight: 400;
   line-height: normal;
   background-color: #FAF9F9;
-  border-bottom: 1px solid #C4C4C4 !important;
+  border-bottom: 1px solid #C4C4C4;
 }
 
 form.ticket-payment .ticket-fm-ctrl input::placeholder {
@@ -939,10 +939,6 @@ button {
   box-shadow: 0px 10px 50px 0px rgba(61, 55, 241, 0.25);
 }
 
-.payment-container .right {
-  padding: 20px 0px;
-}
-
 /* Ticket Styles */
 .ticket-container {
   display: flex;
@@ -970,7 +966,7 @@ button {
   width: 200px;
   padding: 5px 10px;
   font-size: 18px;
-  border: 10px;
+  border: 0px !important;
   text-align: center;
   color: #000;
   text-align: center;
@@ -979,6 +975,30 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  background-color: #ffffff !important;
+}
+.ticket-phone-input{
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #C4C4C4 !important;
+}
+.ticket-phone-input label{
+  width: 160px;
+}
+.ticket-phone-input input{
+  width: 50% !important ;
+  border-bottom: 0px solid #ffffff !important;
+}
+.payment-container .right {
+  padding: 20px 0px;
+  width: 100%;
+  max-width: 572px;
+  min-width: 280px;
 }
 
+.payment-container .right img{
+  width: 100%;
+}
 /* == || TICKET PAYMENT PAGE == */
