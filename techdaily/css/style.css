@@ -99,10 +99,6 @@ header.payment {
   background-color: var(--white) !important;
 }
 
-nav .logo img {
-  width: 120px;
-}
-
 nav .nav-container {
   display: flex;
   align-items: center;
@@ -123,17 +119,12 @@ nav .nav-container .logo a {
   line-height: 34px;
 }
 
-nav .nav-container .logo img {
-  width: 120px;
-  margin: 0px 10px 0px 0px;
+nav .nav-container .logo a span {
+  display: none;
 }
 
-nav .links {
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+nav .nav-container .logo img {
+  margin: 0px 10px 0px 0px;
 }
 
 nav .links a {
@@ -150,6 +141,10 @@ nav .links a:hover {
   transition: all ease 100ms;
 }
 
+.menu-bar {
+  padding: 5px;
+}
+
 .banner {
   padding: 20px 0px;
 }
@@ -157,15 +152,7 @@ nav .links a:hover {
 .banner-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.banner-container .left,
-.banner-container .right {
-  width: 100%;
-  max-width: 480px;
-  min-width: 280px;
 }
 
 .banner-container .left {
@@ -189,9 +176,10 @@ nav .links a:hover {
 }
 
 .banner-container .left .btns {
+  width: fit-content;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 10px 0px 0px;
 }
 
@@ -199,7 +187,7 @@ nav .links a:hover {
   height: 60px;
   width: 182px;
   border-radius: 30px;
-  margin: 0px 20px 0px 0px;
+  margin: 10px;
   font-size: 18px;
   font-weight: 600;
   line-height: 23px;
@@ -226,10 +214,6 @@ nav .links a:hover {
   min-width: 280px;
 }
 
-.button-slide {
-  padding: 10px;
-}
-
 .button-slide button {
   background-color: var(--white);
   border: 0px;
@@ -240,7 +224,7 @@ nav .links a:hover {
   overflow: hidden;
   width: 100% !important;
   max-width: 582px;
-  min-width: 260px;
+  min-width: 240px;
 }
 
 .banner .slide {
@@ -248,7 +232,6 @@ nav .links a:hover {
   transition: transform 0.5s;
   width: 100% !important;
   max-width: 572px;
-  min-width: 260px;
 }
 
 .banner .slide img {
@@ -258,12 +241,13 @@ nav .links a:hover {
 
 .prev-button,
 .next-button {
-  background: none;
+  background: #ffffff00;
   border: none;
   font-size: 24px;
   cursor: pointer;
-  padding: 0;
-  margin: 0 10px;
+  padding: 0px;
+  margin: 0 5px;
+  box-shadow: none;
 }
 
 section.search {
@@ -271,13 +255,14 @@ section.search {
 }
 
 .search-container {
-  border-radius: 20px;
-  padding: 40px 20px;
-  width: 100%;
-  background-color: var(--back-secondary-color);
+  padding: 0px 15px !important;
 }
 
 form.search-form {
+  border-radius: 20px;
+  padding: 40px 20px !important;
+  width: 100%;
+  background-color: var(--back-secondary-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -286,7 +271,6 @@ form.search-form {
 
 .form-control {
   width: 100%;
-  min-width: 280px;
   max-width: 340px;
   margin: 10px 2px;
 }
@@ -448,8 +432,6 @@ form.search-form input::placeholder {
 
 .own-event-container img {
   width: 100%;
-  position: absolute;
-  bottom: 0px;
   max-width: 560px;
   min-width: 280px;
 }
@@ -593,6 +575,7 @@ form.search-form input::placeholder {
   max-width: 330px;
   min-width: 280px;
   background-color: var(--white);
+  margin: 10px 0px;
 }
 
 .blog-card img {
@@ -1087,12 +1070,14 @@ section.success {
   font-weight: 400;
   line-height: normal;
 }
-.success-container .right p{
+
+.success-container .right p {
   color: #000;
-font-family: Inter;
-font-size: 27px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: Inter;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
+
 /* == SUCCESS == */

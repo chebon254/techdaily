@@ -1,17 +1,187 @@
 /* == RESPONSIVE == */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 994px) {
-    .events-head{
-      justify-content: space-evenly;
-    }
+  nav .nav-container .logo img {
+    width: 90px;
   }
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .events-head{
-      justify-content: space-between;
-    }
+
+  .links {
+    height: 100vh;
+    width: 320px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: block;
+    padding: 80px 10px 0px;
+    transition: all ease 0.5s;
+    z-index: 5;
+    background-color: var(--grey);
+    overflow: auto;
   }
-  
-  /* == || RESPONSIVE == */
-  
+
+  .links.active {
+    right: 0%;
+  }
+
+  nav .links a {
+    width: 100%;
+    display: block;
+    padding: 20px 20px;
+  }
+
+  nav .links a.active,
+  nav .links a:hover {
+    color: var(--active-color);
+    transition: all ease 100ms;
+    background-color: #ffffff;
+  }
+
+  .cancel-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px #0e315533;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color);
+    font-size: 18px;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+  }
+
+  .menu-bar {
+    display: block !important;
+  }
+
+  .banner-container {
+    justify-content: center;
+  }
+
+  .banner-container .left,
+  .banner-container .right {
+    width: 100%;
+    max-width: 600px;
+    min-width: 280px;
+    margin: 20px 0px;
+  }
+
+  .banner-container .left {
+    text-align: center;
+  }
+
+  .banner-container .left p {
+    text-align: center;
+    margin: auto;
+  }
+
+  .banner-container .left h1 {
+    text-align: center;
+    margin: auto;
+  }
+
+  .banner-container .left .btns {
+    width: fit-content;
+    margin: auto !important;
+    justify-content: space-evenly;
+  }
+
+  .banner-container .left .btns button {
+    font-size: 14px;
+  }
+
+  .button-slide {
+    padding: 2px;
+  }
+
+  .prev-button,
+  .next-button {
+    width: fit-content;
+  }
+
+  .events-head {
+    justify-content: space-evenly;
+  }
+  .own-event-container img {
+    margin-top: -40px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  nav .nav-container .logo img {
+    width: 120px;
+  }
+
+  nav .links {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-bar {
+    display: none !important;
+  }
+
+  .cancel {
+    display: none;
+  }
+
+  .banner-container {
+    justify-content: center;
+  }
+
+  .banner-container .left,
+  .banner-container .right {
+    width: 100%;
+    max-width: 480px;
+    min-width: 280px;
+    margin: 20px 0px;
+  }
+
+  .banner-container .left {
+    text-align: left;
+  }
+
+  .banner-container .left p {
+    text-align: left;
+    margin: auto;
+  }
+
+  .banner-container .left h1 {
+    text-align: left;
+    margin: auto;
+  }
+
+  .banner-container .left .btns {
+    margin: auto !important;
+    justify-content: flex-start;
+  }
+
+  .banner-container .left .btns button {
+    font-size: 14px;
+  }
+
+  .button-slide {
+    padding: 10px;
+  }
+
+  .prev-button,
+  .next-button {
+    width: fit-content;
+  }
+
+  .events-head {
+    justify-content: space-between;
+  }
+
+  .own-event-container img {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+/* == || RESPONSIVE == */
