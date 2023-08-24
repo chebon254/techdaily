@@ -1,58 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-/* Ticket Styles */
-.ticket-container {
-  display: flex;
-  align-items: center;
-}
-
-.ticket-button {
-  padding: 5px 10px;
-  font-size: 18px;
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  cursor: pointer;
-}
-
-.ticket-input {
-  padding: 5px 10px;
-  font-size: 18px;
-  border: 1px solid #ccc;
-  text-align: center;
-}
-
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  #embedContainer {
+    text-align: center;
+  }
+  #embedCode {
+    width: 100%;
+    height: 200px;
+    resize: none;
+  }
 </style>
+<title>Embed Iframe Example</title>
 </head>
-<body style="background-color:white;">
-
-<h2>Ticket Payment Page</h2>
-
-<div class="ticket-container">
-  <button class="ticket-button" id="decrease"><i class="fas fa-minus"></i></button>
-  <input class="ticket-input" type="number" id="ticket-count" value="1" min="1">
-  <button class="ticket-button" id="increase"><i class="fas fa-plus"></i></button>
+<body>
+<div id="embedContainer">
+  <button id="embedButton">Embed</button>
 </div>
 
 <script>
-const decreaseButton = document.getElementById("decrease");
-const increaseButton = document.getElementById("increase");
-const ticketInput = document.getElementById("ticket-count");
+  const embedButton = document.getElementById('embedButton');
 
-decreaseButton.addEventListener("click", () => {
-  if (ticketInput.value > 1) {
-    ticketInput.value--;
-  }
-});
-
-increaseButton.addEventListener("click", () => {
-  ticketInput.value++;
-});
-
+  embedButton.addEventListener('click', () => {
+    const iframeCode = `<iframe src="https://techdailyevents.web.app/embed.html" width="100%" height="100%" frameborder="0"></iframe>`;
+  });
 </script>
-
 </body>
 </html>

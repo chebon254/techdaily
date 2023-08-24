@@ -70,3 +70,11 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 /* == BANNER SLIDER == */
+
+/* == EMBED CODE == */
+const embedButton = document.getElementById('embedButton');
+
+embedButton.addEventListener('click', () => {
+  const iframeCode = `<iframe src="https://techdailyevents.web.app/embed.html" width="100%" height="100%" frameborder="0"></iframe>`;
+});
+/* == EMBED CODE == */

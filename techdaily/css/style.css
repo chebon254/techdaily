@@ -307,6 +307,9 @@ form.search-form input::placeholder {
 
 
 /* == EVENTS == */
+.events{
+  margin: 30px 0px;
+}
 .events-head {
   display: flex;
   align-items: center;
