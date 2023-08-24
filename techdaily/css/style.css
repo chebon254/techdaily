@@ -230,8 +230,12 @@ nav .links a:hover {
 .banner .slide {
   flex: 0 0 100%;
   transition: transform 0.5s;
+  overflow: hidden;
+  height: fit-content;
+  max-height: 335px;
   width: 100% !important;
   max-width: 572px;
+  border-radius: 20px;
 }
 
 .banner .slide img {

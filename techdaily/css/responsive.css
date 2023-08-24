@@ -157,12 +157,12 @@
   }
 
   .banner-container .left .btns {
-    margin: auto !important;
     justify-content: flex-start;
   }
 
   .banner-container .left .btns button {
     font-size: 14px;
+    margin: 0px 10px 0px 0px;
   }
 
   .button-slide {
