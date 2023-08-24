@@ -281,12 +281,14 @@ form.search-form {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .form-control {
   width: 100%;
   min-width: 280px;
   max-width: 340px;
+  margin: 10px 2px;
 }
 
 form.search-form label {
@@ -541,6 +543,11 @@ form.search-form input::placeholder {
   width: 100%;
   max-width: 280px;
   min-width: 240px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
 }
 
 /* == BRANDS == */
@@ -747,6 +754,7 @@ footer {
   font-weight: 400;
   line-height: normal;
   padding: 0px 10px;
+  border: 0px;
 }
 
 .footer-column form input::placeholder {
